@@ -1,4 +1,4 @@
-# Install script for directory: /home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src
+# Install script for directory: /home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,11 +37,15 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libspatialindex.so.6.1.1"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libspatialindex.so.6"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libspatialindex.so"
       )
     if(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
@@ -51,14 +55,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/bin/libspatialindex.so.6.1.1"
-    "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/bin/libspatialindex.so.6"
-    "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/bin/libspatialindex.so"
+    "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/bin/libspatialindex.so.6.1.1"
+    "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/bin/libspatialindex.so.6"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libspatialindex.so.6.1.1"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libspatialindex.so.6"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libspatialindex.so"
       )
     if(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
@@ -69,11 +71,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   endforeach()
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/bin/libspatialindex.so")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libspatialindex_c.so.6.1.1"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libspatialindex_c.so.6"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libspatialindex_c.so"
       )
     if(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
@@ -83,20 +88,18 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/bin/libspatialindex_c.so.6.1.1"
-    "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/bin/libspatialindex_c.so.6"
-    "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/bin/libspatialindex_c.so"
+    "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/bin/libspatialindex_c.so.6.1.1"
+    "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/bin/libspatialindex_c.so.6"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libspatialindex_c.so.6.1.1"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libspatialindex_c.so.6"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libspatialindex_c.so"
       )
     if(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
       file(RPATH_CHANGE
            FILE "${file}"
-           OLD_RPATH "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/bin:"
+           OLD_RPATH "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/bin:"
            NEW_RPATH "")
       if(CMAKE_INSTALL_DO_STRIP)
         execute_process(COMMAND "/usr/bin/strip" "${file}")
@@ -105,7 +108,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   endforeach()
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/spatialindex" TYPE DIRECTORY FILES "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/include/spatialindex/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/[^/]*\\.hpp$")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/bin/libspatialindex_c.so")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/spatialindex" TYPE DIRECTORY FILES "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/include/spatialindex/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/[^/]*\\.hpp$")
 endif()
 

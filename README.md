@@ -1,5 +1,12 @@
 # PLATON
 
+Needed to build on Linux system:
+sudo apt install cmake
+sudo apt install g++
+
+To build it yourself you need to delete CMakeCache.txt in /spatialindex-src-1.9.3
+
+
 We have provided an rectangle dataset and a training query set under [`./learned-packing/data`](./learned-packing/data)
 
 To pack R-tree through PLATON:
@@ -23,9 +30,16 @@ g++ -std=c++0x tree_load.cpp -lspatialindex_c -lspatialindex -o tree_load -L../s
 g++ -std=c++0x query.cpp -lspatialindex_c -lspatialindex -o query -L../spatialindex-src-1.9.3/bin -I../spatialindex-src-1.9.3/include
 ```
 
+In /rtree do: ldd bulk_loading
+```
+If libspatialindex.so.6 => not found do: export LD_LIBRARY_PATH=/your/path/to/spatialindex-src-1.9.3/bin:$LD_LIBRARY_PATH
+```
+
 To construct the R-tree packed using PLATON:
 ```
-./bulk_loading ./data/data_rect_0_0.001_1000000 ./tree/tree_rect_0_0.001_1000000_aspect_0.01_0.001_10000_greedy 125 0.8 tgs ../learned-packing/cut_list/mcts_rect_0_0.001_1000000_aspect_0.01_0.001_10000_greedy
+In /rtree do: mkdir -p ./tree 
+
+./bulk_loading ./data/data_rect_0_0.001_1000000 ./tree/tree_rect_0_0.001_1000000_aspect_0.01_0.001_10000_greedy 125 0.8 tgs ../learned-packing/cut_list/mcts_rect_0_0.001_1000000_aspect_0.01_0.001_10000
 ```
 
 To test the packed R-tree on the test dataset:

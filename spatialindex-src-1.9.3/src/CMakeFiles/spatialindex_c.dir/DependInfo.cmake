@@ -1,38 +1,39 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/capi/BoundsQuery.cc" "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/CMakeFiles/spatialindex_c.dir/capi/BoundsQuery.cc.o"
-  "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/capi/CountVisitor.cc" "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/CMakeFiles/spatialindex_c.dir/capi/CountVisitor.cc.o"
-  "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/capi/CustomStorage.cc" "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/CMakeFiles/spatialindex_c.dir/capi/CustomStorage.cc.o"
-  "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/capi/DataStream.cc" "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/CMakeFiles/spatialindex_c.dir/capi/DataStream.cc.o"
-  "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/capi/Error.cc" "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/CMakeFiles/spatialindex_c.dir/capi/Error.cc.o"
-  "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/capi/IdVisitor.cc" "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/CMakeFiles/spatialindex_c.dir/capi/IdVisitor.cc.o"
-  "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/capi/Index.cc" "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/CMakeFiles/spatialindex_c.dir/capi/Index.cc.o"
-  "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/capi/LeafQuery.cc" "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/CMakeFiles/spatialindex_c.dir/capi/LeafQuery.cc.o"
-  "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/capi/ObjVisitor.cc" "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/CMakeFiles/spatialindex_c.dir/capi/ObjVisitor.cc.o"
-  "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/capi/Utility.cc" "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/CMakeFiles/spatialindex_c.dir/capi/Utility.cc.o"
-  "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/capi/sidx_api.cc" "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/CMakeFiles/spatialindex_c.dir/capi/sidx_api.cc.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "src/../include"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/src/capi/BoundsQuery.cc" "src/CMakeFiles/spatialindex_c.dir/capi/BoundsQuery.cc.o" "gcc" "src/CMakeFiles/spatialindex_c.dir/capi/BoundsQuery.cc.o.d"
+  "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/src/capi/CountVisitor.cc" "src/CMakeFiles/spatialindex_c.dir/capi/CountVisitor.cc.o" "gcc" "src/CMakeFiles/spatialindex_c.dir/capi/CountVisitor.cc.o.d"
+  "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/src/capi/CustomStorage.cc" "src/CMakeFiles/spatialindex_c.dir/capi/CustomStorage.cc.o" "gcc" "src/CMakeFiles/spatialindex_c.dir/capi/CustomStorage.cc.o.d"
+  "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/src/capi/DataStream.cc" "src/CMakeFiles/spatialindex_c.dir/capi/DataStream.cc.o" "gcc" "src/CMakeFiles/spatialindex_c.dir/capi/DataStream.cc.o.d"
+  "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/src/capi/Error.cc" "src/CMakeFiles/spatialindex_c.dir/capi/Error.cc.o" "gcc" "src/CMakeFiles/spatialindex_c.dir/capi/Error.cc.o.d"
+  "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/src/capi/IdVisitor.cc" "src/CMakeFiles/spatialindex_c.dir/capi/IdVisitor.cc.o" "gcc" "src/CMakeFiles/spatialindex_c.dir/capi/IdVisitor.cc.o.d"
+  "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/src/capi/Index.cc" "src/CMakeFiles/spatialindex_c.dir/capi/Index.cc.o" "gcc" "src/CMakeFiles/spatialindex_c.dir/capi/Index.cc.o.d"
+  "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/src/capi/LeafQuery.cc" "src/CMakeFiles/spatialindex_c.dir/capi/LeafQuery.cc.o" "gcc" "src/CMakeFiles/spatialindex_c.dir/capi/LeafQuery.cc.o.d"
+  "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/src/capi/ObjVisitor.cc" "src/CMakeFiles/spatialindex_c.dir/capi/ObjVisitor.cc.o" "gcc" "src/CMakeFiles/spatialindex_c.dir/capi/ObjVisitor.cc.o.d"
+  "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/src/capi/Utility.cc" "src/CMakeFiles/spatialindex_c.dir/capi/Utility.cc.o" "gcc" "src/CMakeFiles/spatialindex_c.dir/capi/Utility.cc.o.d"
+  "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/src/capi/sidx_api.cc" "src/CMakeFiles/spatialindex_c.dir/capi/sidx_api.cc.o" "gcc" "src/CMakeFiles/spatialindex_c.dir/capi/sidx_api.cc.o.d"
   )
 
 # Pairs of files generated by the same build rule.
 set(CMAKE_MULTIPLE_OUTPUT_PAIRS
-  "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/bin/libspatialindex_c.so" "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/bin/libspatialindex_c.so.6.1.1"
-  "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/bin/libspatialindex_c.so.6" "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/bin/libspatialindex_c.so.6.1.1"
+  "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/bin/libspatialindex_c.so" "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/bin/libspatialindex_c.so.6.1.1"
+  "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/bin/libspatialindex_c.so.6" "/home/maxwell/Documents/PLATON /PLATON/spatialindex-src-1.9.3/bin/libspatialindex_c.so.6.1.1"
   )
 
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home_nfs/jingyi/rtree-packing/PLATON/spatialindex-src-1.9.3/src/CMakeFiles/spatialindex.dir/DependInfo.cmake"
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

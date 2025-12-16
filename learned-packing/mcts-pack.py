@@ -8,9 +8,10 @@ from PIL import Image
 import copy
 import time
 import numpy as np
-import cupy as cp
+#import cupy as cp
 import math
 import csv
+import os
 
 from env import RtreeEnv
 from env import getMBR
@@ -140,6 +141,9 @@ while queue:
 print("MCTS training totalReward: {}, totalIO: {}, total number of skipped blocks: {}, total io: {}, time: {}".format(totalReward, maxReward - totalReward, totalSkipped, [maxRewardTest[i]-totalSkipped[i] for i in range(len(totalSkipped))], time.time()-start))
 # print("MCTS totalReward: {}, time: {}".format(totalReward, time.time() - start))
 # print("number of actions in actionList: {}".format(len(actionList)))
+
+os.makedirs("./cut_list", exist_ok=True)
+
 with open("./cut_list/mcts_{}_{}_{}_{}".format(data_type, n, query_type, n_queries), 'w') as csvfile:
     writer = csv.writer(csvfile, delimiter=' ', quotechar='|', quoting=csv.QUOTE_MINIMAL)
     for row in actionList:
