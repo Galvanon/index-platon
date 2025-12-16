@@ -30,7 +30,7 @@ If libspatialindex.so.6 => not found do: export LD_LIBRARY_PATH=/your/path/to/sp
 
 To construct the R-tree packed using PLATON:
 ```
-In /rtree do: mkdir -p ./tree 
+In /rtree do: mkdir -p ./tree #only if the directory doesnt exist yet
 
 ./bulk_loading ./data/data_rect_0_0.001_1000000 ./tree/tree_rect_0_0.001_1000000_aspect_0.01_0.001_10000_greedy 125 0.8 tgs ../learned-packing/cut_list/mcts_rect_0_0.001_1000000_aspect_0.01_0.001_10000
 ```
