@@ -1,12 +1,5 @@
 # PLATON
 
-Needed to build on Linux system:
-sudo apt install cmake
-sudo apt install g++
-
-To build it yourself you need to delete CMakeCache.txt in /spatialindex-src-1.9.3
-
-
 We have provided an rectangle dataset and a training query set under [`./learned-packing/data`](./learned-packing/data)
 
 To pack R-tree through PLATON:
@@ -47,3 +40,10 @@ To test the packed R-tree on the test dataset:
 ./query ./data/query_aspect_0.01_0.001_test_10000 ./tree/tree_rect_0_0.001_1000000_aspect_0.01_0.001_10000_greedy intersection > res
 ```
 
+--------------------------------------------------------------------------------------
+
+Needed to build on Linux system:
+sudo apt install cmake
+sudo apt install g++
+
+To build it yourself you need to delete CMakeCache.txt in /spatialindex-src-1.9.3
